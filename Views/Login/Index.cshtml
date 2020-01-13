@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Index</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <h1 class="text-center">Login</h1>
+                <div class="text-center">
+                    <img class="profile-img" src="~/Images/login_img.png" alt="" />
+                    <br />
+                    <br />
+                    <div class="form-signin">
+                        <input type="text" class="form-control" id="txtUsuario" placeholder="Usuario" required autofocus>
+                        <br />
+                        <input type="password" class="form-control" id="txtContraseña" placeholder="Contraseña" required>
+                        <br />
+                        <br />
+                        <button onclick="Ingresar()" class="btn btn-lg btn-primary btn-block" type="button">
+                            Iniciar Sesión
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Login/Login.js"></script>
+</body>
+</html>
